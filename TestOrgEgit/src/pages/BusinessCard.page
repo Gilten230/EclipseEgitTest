@@ -1,0 +1,29 @@
+<apex:page docType="html-5.0" title="Create Account">
+    
+    
+    <head>
+        <apex:slds /> 
+    </head>
+
+<body class="slds-scope"> 
+  <dl class="slds-list_horizontal slds-wrap">
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Name:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for first label">{!$User.FirstName}</dd>
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Last Name:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for second label">{!$User.LastName}</dd> 
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Email:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for second label">{!$User.Email}</dd>
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Fourth Label">Phone:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for second label">{!$User.Phone}</dd>
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Fifth Label">Title:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for second label">{!$User.Title}</dd>    
+  </dl>
+</body>
+    <div class="mypage">
+        <input type="text" id="EmailField"/>
+        <button>Send</button>
+    </div>
+    
+   
+    
+</apex:page>

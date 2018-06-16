@@ -1,0 +1,21 @@
+<apex:page docType="html-5.0" standardController="Opportunity">
+    <style>
+        .mypage .quote {
+            margin: 12px 0;
+            font-size: 64px;
+            text-align: center;
+        }
+        .mypage .delta {
+            font-size: 24px;
+            text-align: center;
+            color: green;
+        }
+    </style>
+    
+    <div class="mypage">
+        Stock:
+        <div class="quote">l{!IF( Opportunity.StageName= "Prospecting", "Work faster!", IF (Opportunity.StageName= "Needs Analysis","Uraaa", IF(Opportunity.StageName= "Proposal/Price Quote","Hohoho",IF(Opportunity.StageName= "Negotiation/Review","Banzai","Fail"))))}</div>
+        
+    </div>
+    
+</apex:page>

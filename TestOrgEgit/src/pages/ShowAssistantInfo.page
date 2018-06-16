@@ -1,0 +1,18 @@
+<apex:page standardController="Contact">
+
+<head>
+  <apex:slds /> 
+</head>
+
+<body class="slds-scope">
+  
+  <dl class="slds-list_horizontal slds-wrap">
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">Assistant's name:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for first label">{!Contact.AssistantName}</dd>
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Assistant's phone:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for second label"><a href="tel:{!Contact.AssistantPhone}">{!Contact.AssistantPhone}</a></dd>     
+  </dl>
+  
+</body>
+
+</apex:page>
