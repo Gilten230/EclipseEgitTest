@@ -1,0 +1,7 @@
+project
+.settings
+build/local.properties
+build/local-alexorg.properties
+src/package.xml
+temp/
+
