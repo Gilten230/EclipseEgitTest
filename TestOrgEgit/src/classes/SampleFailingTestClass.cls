@@ -6,6 +6,6 @@ public class SampleFailingTestClass {
         insert acc;
 
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
-        System.assertEquals('867-566475', retAcc.phone); // Always fails.
+        System.assertEquals('867-5886475', retAcc.phone); // Always fails.
     }
 }
